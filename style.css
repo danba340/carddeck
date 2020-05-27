@@ -1,0 +1,67 @@
+$base-size: 8px;
+$font-stack: Helvetica, sans-serif;
+
+#root {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.deck {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 48px;
+  height: 80px;
+  background-color: #FFF;
+  border-radius: $base-size;
+  border: 2px solid black;
+  margin: 16px;
+  padding: 4px;
+}
+
+.card-black {
+  color: black;
+}
+
+.card-red {
+  color: red;
+}
+
+.card-value {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 auto;
+}
+
+.card-suit {
+  font-size: 24px;
+  line-height: 16px;
+  margin: 0 auto;
+}
+
+.card-tl {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.card-br {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  transform:rotate(-180deg);
+}
+
+input[type=button] {
+  padding: 8px 16px;
+  margin: 16px;
+  border-radius: 8px;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+}
